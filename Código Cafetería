@@ -1,0 +1,26 @@
+def descuento(precio, unidades, descuento):
+    total = 0
+    for i in range(unidades):
+        desc = precio * descuento
+        total += precio - desc
+    return total
+
+def imprimir(ced, rol, total, cod):
+    print("El " + rol + " con cedula " + str(ced) + " debe pagar $" + str(total) + " por el producto " + str(cod))
+
+def cafeteria():
+    ced = int(input("Cedula: "))
+    rol = int(input("Si eres estudiante escribir 0, si eres profesor escribir 1: "))
+    if rol == 0: beca = int(input("Si eres becado escribir 0, de lo contrario 1: "))
+    codigo = int(input("Ingrese el código(número) del producto: "))
+    unid = int(input("Ingrese el número de unidades: "))
+    precio = int(input("Ingrese el precio del producto: "))
+    if rol == 0 and beca == 0:
+        total = descuento(precio, unid, 0.5)
+        imprimir(ced, "estudiante", total, codigo)
+    elif rol == 0:
+        total = descuento(precio, unid, 0.3)
+        imprimir(ced, "estudiante", total, codigo)
+    else:
+        total = descuento(precio, unid, 0.2)
+        imprimir(ced, "profesor", total, codigo)
