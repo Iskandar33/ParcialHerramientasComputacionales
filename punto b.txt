@@ -1,0 +1,9 @@
+R/b)
+1.
+Se presentaron dos errores durante la realización de mi implementación a código en Python, uno de ellos fue el intentar concatenar strings con ints. 
+Un error común donde dice que no se puede concatenar una string con un int, la solución de este error es bastante rápida, lo cual es volver el int “ced” en una string.
+Otro error fue un error el escribir mal el nombre de las variables.
+El cual también es un error común y muy fácil de encontrar y solucionar, este error es omitir letras o poner caracteres que no están en el nombre de la variable por lo cual sucede un error.
+2.
+Una estrategia podría ser la depuración, una herramienta eficaz para códigos no tan largos, por lo que se observa línea por línea en donde se podría encontrar el error, en este caso el editor nos marca donde se encuentra el error.
+También ayuda mucho con errores como el segundo, el poner nombres cortos y que tengan que ver con su función.
